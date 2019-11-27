@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../header/header";
 import DayPict from "../dayPict/dayPict";
-import PictDetails from "../pictDetails/pictDetails";
+//import PictDetails from "../pictDetails/pictDetails";
 import './app.css';
 
 
@@ -17,9 +17,9 @@ function App() {
                     <DayPict />
                 </div>
 
-                <div className="col-md-6">
+                {/* <div className="col-md-6">
                     <PictDetails />
-                </div>
+                </div> */}
             </div>
         </React.Fragment>
 

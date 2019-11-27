@@ -10,19 +10,19 @@ export default class ServicePicNasa {
 
         return await getResPic.json();
     };
-    // getPictOfDay() {
-    //     return console.log(this.getRes('https://api.nasa.gov/planetary/apod?api_key=yLdrlHcI879YU86fgDcpwxbUBHkbh5tobw26qvyF'));
-    // }
+    getPictOfDay() {
+        return this.getRes('https://api.nasa.gov/planetary/apod?api_key=yLdrlHcI879YU86fgDcpwxbUBHkbh5tobw26qvyF');
+    }
 
 }
-const servPic = new ServicePicNasa();
+// const servPic = new ServicePicNasa();
 
-servPic.getRes('https://api.nasa.gov/planetary/apod?api_key=yLdrlHcI879YU86fgDcpwxbUBHkbh5tobw26qvyF').then((picture) => {
-    console.log(picture);
-})
+// servPic.getRes('https://api.nasa.gov/planetary/apod?api_key=yLdrlHcI879YU86fgDcpwxbUBHkbh5tobw26qvyF').then((picture) => {
 
-servPic.getRes('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=yLdrlHcI879YU86fgDcpwxbUBHkbh5tobw26qvyF')
-    .then((photos) => {
-        console.log(photos);
-    })
+// })
+
+// servPic.getRes('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=yLdrlHcI879YU86fgDcpwxbUBHkbh5tobw26qvyF')
+//     .then((photos) => {
+
+//     })
 
