@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './header.css';
 
-const Header = () => {
-    return (
-        <div className="header">Hello!</div>
-    )
-};
+export default class Header extends Component {
 
-export default Header();
+    render() {
+        return <h1 className="header">Menu</h1>
+    }
+
+}

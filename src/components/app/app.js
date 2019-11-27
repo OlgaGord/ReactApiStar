@@ -10,7 +10,7 @@ function App() {
     return (
         <React.Fragment>
             <div className="header">
-                {Header}
+                <Header />
             </div>
             <div className="row">
                 <div className="col-md-6">
