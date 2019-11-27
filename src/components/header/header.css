@@ -1,0 +1,11 @@
+.header {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  color: white;
+}
+
+.header ul li {
+  list-style: none;
+  padding: 0.5 rem 1rem;
+  border-radius: 1px;
+}
