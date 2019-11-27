@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './pictDetails.css';
 
-const PictDetails = () => {
-    return (
-        <div className="pictDetails"></div>
-    )
-};
+export default class PictDetails extends Component {
 
-export default PictDetails();
+    render() {
+        return <h1 className="picDetails">Picture's details:</h1>
+    }
+
+}
