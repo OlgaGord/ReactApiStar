@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../header/header";
 import DayPict from "../dayPict/dayPict";
-
+import PictDetails from "../pictDetails/pictDetails";
 import './app.css';
 
 
@@ -18,8 +18,7 @@ function App() {
                 </div>
 
                 <div className="col-md-6">
-                    {/* <PictDetails /> */}
-                    <h1>Pict Details</h1>
+                    <PictDetails />
                 </div>
             </div>
         </React.Fragment>
