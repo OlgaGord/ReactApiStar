@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from "../header/header";
 import DayPict from "../dayPict/dayPict";
+
+
 //import PictDetails from "../pictDetails/pictDetails";
 import './app.css';
 

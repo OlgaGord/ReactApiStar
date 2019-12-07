@@ -1,0 +1,9 @@
+.navbar-custom > a {
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-custom:hover {
+  color: orangered;
+}
