@@ -2,7 +2,16 @@
 
 export default class ServicePicNasa {
     async getRes(url) {
-        const getResPic = await fetch(url);
+        const getResPic = await fetch(url,
+            {
+                crossDomain: true,
+                mode: 'cors',
+                crossorigin: "anonymous",
+                method: 'GET',
+                headers: { 'Content-Type': 'text / plain' }
+            }
+
+        );
         if (!getResPic.ok) {
             throw new Error(`Can not fetch ${url}` +
                 `error ${getResPic.status}`)
@@ -10,6 +19,8 @@ export default class ServicePicNasa {
 
         return await getResPic.json();
     };
+
+
     getPictOfDay() {
         return this.getRes('https://api.nasa.gov/planetary/apod?api_key=yLdrlHcI879YU86fgDcpwxbUBHkbh5tobw26qvyF');
     }
